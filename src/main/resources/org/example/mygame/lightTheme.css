@@ -1,0 +1,165 @@
+#playButton {
+    -fx-background-color: linear-gradient(#ffffff,#ffffff);
+    -fx-text-fill: black;
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-size: 36px;
+    -fx-border-color: black;
+    -fx-border-width: 0;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+}
+
+#playButton:hover {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow( one-pass-box , black , 8 , 0.0 , 2 , 0 );
+}
+
+
+#exitButton {
+    -fx-background-color: linear-gradient(#ffffff,#ffffff);
+    -fx-text-fill: black;
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-size: 36px;
+    -fx-border-color: black;
+    -fx-border-width: 0;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+}
+
+#exitButton:hover {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow( one-pass-box , black , 8 , 0.0 , 2 , 0 );
+}
+
+#rulesButton {
+    -fx-background-color: linear-gradient(#ffffff,#ffffff);
+    -fx-text-fill: black;
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-size: 36px;
+    -fx-border-color: black;
+    -fx-border-width: 0;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+}
+#rulesButton:hover {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow( one-pass-box , black , 8 , 0.0 , 2 , 0 );
+}
+
+#mainPane,
+#gamePane,
+#hangmanPane
+{
+    -fx-background-color: linear-gradient(#ffffff,#ffffff);
+}
+
+#allTopicButton,
+#casualTopicButton,
+#faunaTopicButton,
+#geographyTopicButton,
+#historyTopicButton,
+#scienceTopicButton,
+#literatureTopicButton
+{
+    -fx-background-color: linear-gradient(#ffffff,#ffffff);
+    -fx-text-fill: black;
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-size: 36px;
+    -fx-border-color: black;
+    -fx-border-width: 0;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+}
+
+#allTopicButton:hover,
+#casualTopicButton:hover,
+#faunaTopicButton:hover,
+#geographyTopicButton:hover,
+#historyTopicButton:hover,
+#scienceTopicButton:hover,
+#literatureTopicButton:hover,
+#goBackButton:hover
+{
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow( one-pass-box , black , 8 , 0.0 , 2 , 0 );
+}
+
+#btnA, #btnB, #btnC, #btnD, #btnE, #btnF, #btnG, #btnH, #btnI, #btnJ, #btnK, #btnL,
+#btnM, #btnN, #btnO, #btnP, #btnQ, #btnR, #btnS, #btnT, #btnU, #btnV, #btnW, #btnX,
+#btnY, #btnZ
+{
+    -fx-background-color: linear-gradient(#ffffff,#ffffff);
+    -fx-text-fill: black;
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-size: 24px;
+    -fx-border-color: black;
+    -fx-border-width: 0;
+    -fx-border-radius: 60;
+    -fx-background-radius: 60;
+}
+
+#btnA:hover, #btnB:hover, #btnC:hover, #btnD:hover, #btnE:hover, #btnF:hover, #btnG:hover, #btnH:hover, #btnI:hover, #btnJ:hover, #btnK:hover, #btnL:hover,
+#btnM:hover, #btnN:hover, #btnO:hover, #btnP:hover, #btnQ:hover, #btnR:hover, #btnS:hover, #btnT:hover, #btnU:hover, #btnV:hover, #btnW:hover, #btnX:hover,
+#btnY:hover, #btnZ:hover
+{
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow( one-pass-box , black , 8 , 0.0 , 2 , 0 );
+}
+
+#txtbox0, #txtbox1, #txtbox2, #txtbox3, #txtbox4, #txtbox5, #txtbox6, #txtbox7, #txtbox8,
+#txtbox9, #txtbox10, #txtbox11, #txtbox12, #txtbox13
+{
+    -fx-background-color: linear-gradient(#ffffff,#ffffff);
+    -fx-text-fill: black;
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-size: 24px;
+    -fx-border-color: black;
+    -fx-border-width: 1;
+
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+#goBackButton
+{
+    -fx-background-color: linear-gradient(#ffffff,#ffffff);
+    -fx-text-fill: black;
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-size: 5px;
+    -fx-border-color: black;
+    -fx-border-width: 0;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+}
+
+#textPrompt
+{
+    -fx-text-fill: black;
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-size: 36px;
+}
+
+.progress-bar {
+    -fx-background-color: #ffffff; /* Фон для всей ProgressBar */
+    -fx-border-width: 0;
+    -fx-border-radius: 0;
+    -fx-min-height: 20px; /* Высота ProgressBar */
+    -fx-pref-width: 200px; /* Ширина ProgressBar */
+}
+
+.progress-bar > .bar {
+    -fx-background-image: url('/heart.jpg'); /* Сердечко на месте полосы */
+    -fx-background-repeat: repeat-x; /* Повторяется горизонтально */
+    -fx-min-height: 20px; /* Высота полосы */
+}
+.progress-bar > .track {
+    -fx-background-color: #ffffff; /* Белый фон для самой полосы */
+}
+
+
+

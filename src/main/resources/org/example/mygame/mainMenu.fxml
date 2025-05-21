@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1450.0" stylesheets="@lightTheme.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.mygame.MenuController">
+   <children>
+      <!-- Текст "Hangman" -->
+      <Text fontSmoothingType="LCD" layoutX="518.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hangman" wrappingWidth="413.3163242340088">
+         <font>
+            <Font name="Comic Sans MS" size="96.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="hangmanImage" fitHeight="870.0" fitWidth="483.0" layoutX="-96.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../hang.png" />
+         </image></ImageView>
+      <ImageView fx:id="man" fitHeight="607.0" fitWidth="294.0" layoutX="83.0" layoutY="206.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../man.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="exitButton" cancelButton="true" contentDisplay="TOP" layoutX="604.0" layoutY="616.0" lineSpacing="2.0" mnemonicParsing="false" onAction="#exit" prefHeight="94.0" prefWidth="241.0" stylesheets="@lightTheme.css" text="Exit" textAlignment="CENTER">
+         <font>
+            <Font name="Comic Sans MS" size="36.0" />
+         </font>
+      </Button>
+      <Button fx:id="playButton" graphicTextGap="100.0" layoutX="604.0" layoutY="398.0" mnemonicParsing="false" onAction="#goToSelection" prefHeight="94.0" prefWidth="241.0" stylesheets="@lightTheme.css" text="Play" textAlignment="CENTER" textOverrun="CLIP">
+         <font>
+            <Font name="Comic Sans MS" size="36.0" />
+         </font>
+      </Button>
+      <Button fx:id="rulesButton" layoutX="604.0" layoutY="510.0" mnemonicParsing="false" prefHeight="94.0" prefWidth="241.0" stylesheets="@lightTheme.css" text="Read rules" textAlignment="CENTER">
+         <font>
+            <Font name="Comic Sans MS" size="36.0" />
+         </font>
+      </Button>
+
+   </children>
+</AnchorPane>

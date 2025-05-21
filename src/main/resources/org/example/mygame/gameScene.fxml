@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="hangmanPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1450.0" stylesheets="@lightTheme.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.mygame.GameController">
+   <children>
+      <Text layoutX="57.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Guess the word or get hanged">
+         <font>
+            <Font name="Comic Sans MS" size="96.0" />
+         </font>
+      </Text>
+      <GridPane fx:id="gridPaneAlphabet" hgap="30.0" layoutX="630.0" layoutY="639.0" prefHeight="333.0" prefWidth="797.0" vgap="30.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="120.0" minWidth="10.0" prefWidth="120.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="120.0" minWidth="10.0" prefWidth="120.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="120.0" minWidth="10.0" prefWidth="120.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="120.0" minWidth="10.0" prefWidth="120.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="120.0" minWidth="10.0" prefWidth="120.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="120.0" minWidth="10.0" prefWidth="120.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="120.0" minWidth="10.0" prefWidth="120.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="btnH" mnemonicParsing="false" onAction="#buttonClick" prefHeight="127.0" prefWidth="94.0" text="H" GridPane.rowIndex="1" />
+            <Button fx:id="btnO" mnemonicParsing="false" onAction="#buttonClick" prefHeight="119.0" prefWidth="94.0" text="O" GridPane.rowIndex="2" />
+            <Button fx:id="btnV" mnemonicParsing="false" onAction="#buttonClick" prefHeight="111.0" prefWidth="160.0" text="V" GridPane.rowIndex="3" />
+            <Button fx:id="btnN" mnemonicParsing="false" onAction="#buttonClick" prefHeight="135.0" prefWidth="94.0" text="N" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+            <Button fx:id="btnB" mnemonicParsing="false" onAction="#buttonClick" prefHeight="119.0" prefWidth="94.0" text="B" GridPane.columnIndex="1" />
+            <Button fx:id="btnK" mnemonicParsing="false" onAction="#buttonClick" prefHeight="127.0" prefWidth="94.0" text="K" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Button fx:id="btnP" mnemonicParsing="false" onAction="#buttonClick" prefHeight="128.0" prefWidth="94.0" text="P" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="btnW" mnemonicParsing="false" onAction="#buttonClick" prefHeight="134.0" prefWidth="157.0" text="W" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button fx:id="btnU" mnemonicParsing="false" onAction="#buttonClick" prefHeight="97.0" prefWidth="117.0" text="U" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+            <Button fx:id="btnC" mnemonicParsing="false" onAction="#buttonClick" prefHeight="121.0" prefWidth="94.0" text="C" GridPane.columnIndex="2" />
+            <Button fx:id="btnI" mnemonicParsing="false" onAction="#buttonClick" prefHeight="136.0" prefWidth="94.0" text="I" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="btnJ" mnemonicParsing="false" onAction="#buttonClick" prefHeight="129.0" prefWidth="94.0" text="J" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button fx:id="btnR" mnemonicParsing="false" onAction="#buttonClick" prefHeight="137.0" prefWidth="94.0" text="R" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Button fx:id="btnQ" mnemonicParsing="false" onAction="#buttonClick" prefHeight="131.0" prefWidth="94.0" text="Q" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button fx:id="btnX" mnemonicParsing="false" onAction="#buttonClick" prefHeight="132.0" prefWidth="142.0" text="X" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Button fx:id="btnY" mnemonicParsing="false" onAction="#buttonClick" prefHeight="126.0" prefWidth="150.0" text="Y" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Button fx:id="btnZ" mnemonicParsing="false" onAction="#buttonClick" prefHeight="132.0" prefWidth="137.0" text="Z" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <Button fx:id="btnT" mnemonicParsing="false" onAction="#buttonClick" prefHeight="139.0" prefWidth="94.0" text="T" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <Button fx:id="btnE" mnemonicParsing="false" onAction="#buttonClick" prefHeight="125.0" prefWidth="94.0" text="E" GridPane.columnIndex="4" />
+            <Button fx:id="btnG" mnemonicParsing="false" onAction="#buttonClick" prefHeight="97.0" prefWidth="129.0" text="G" GridPane.columnIndex="6" />
+            <Button fx:id="btnL" mnemonicParsing="false" onAction="#buttonClick" prefHeight="139.0" prefWidth="94.0" text="L" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <Button fx:id="btnF" mnemonicParsing="false" onAction="#buttonClick" prefHeight="132.0" prefWidth="151.0" text="F" GridPane.columnIndex="5" />
+            <Button fx:id="btnM" mnemonicParsing="false" onAction="#buttonClick" prefHeight="138.0" prefWidth="94.0" text="M" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+            <Button fx:id="btnS" mnemonicParsing="false" onAction="#buttonClick" prefHeight="160.0" prefWidth="94.0" text="S" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <Button fx:id="btnA" mnemonicParsing="false" onAction="#buttonClick" prefHeight="97.0" prefWidth="180.0" text="A" />
+            <Button fx:id="btnD" mnemonicParsing="false" onAction="#buttonClick" prefHeight="121.0" prefWidth="94.0" text="D" GridPane.columnIndex="3" />
+         </children>
+      </GridPane>
+      <ImageView fx:id="emptyHang" fitHeight="924.0" fitWidth="613.0" layoutX="-102.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../hangNoLoop.png" />
+         </image>
+      </ImageView>
+      <GridPane fx:id="gridPaneLetters" hgap="5.0" layoutX="652.0" layoutY="465.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="60.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="60.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="60.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="60.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="60.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="60.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="60.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="60.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="60.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="60.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="60.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="60.0" />
+            <ColumnConstraints />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="40.0" prefHeight="50.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="txtbox0" alignment="CENTER" editable="false" prefHeight="51.0" prefWidth="47.0" visible="false" GridPane.columnIndex="0">
+               <font>
+                  <Font name="Comic Sans MS" size="24.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtbox1" alignment="CENTER" editable="false" prefHeight="51.0" prefWidth="47.0" visible="false" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Comic Sans MS" size="24.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtbox2" editable="false" prefHeight="51.0" prefWidth="47.0" visible="false" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Comic Sans MS" size="24.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtbox3" editable="false" prefHeight="51.0" prefWidth="47.0" visible="false" GridPane.columnIndex="3">
+               <font>
+                  <Font name="Comic Sans MS" size="24.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtbox4" editable="false" prefHeight="51.0" prefWidth="47.0" visible="false" GridPane.columnIndex="4">
+               <font>
+                  <Font name="Comic Sans MS" size="24.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtbox5" editable="false" prefHeight="51.0" prefWidth="47.0" visible="false" GridPane.columnIndex="5">
+               <font>
+                  <Font name="Comic Sans MS" size="24.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtbox6" editable="false" prefHeight="51.0" prefWidth="47.0" visible="false" GridPane.columnIndex="6">
+               <font>
+                  <Font name="Comic Sans MS" size="24.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtbox7" editable="false" prefHeight="51.0" prefWidth="47.0" visible="false" GridPane.columnIndex="7">
+               <font>
+                  <Font name="Comic Sans MS" size="24.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtbox8" editable="false" prefHeight="51.0" prefWidth="47.0" visible="false" GridPane.columnIndex="8">
+               <font>
+                  <Font name="Comic Sans MS" size="24.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtbox9" editable="false" prefHeight="51.0" prefWidth="47.0" visible="false" GridPane.columnIndex="9">
+               <font>
+                  <Font name="Comic Sans MS" size="24.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtbox10" editable="false" prefHeight="51.0" prefWidth="47.0" visible="false" GridPane.columnIndex="10">
+               <font>
+                  <Font name="Comic Sans MS" size="24.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtbox11" editable="false" prefHeight="51.0" prefWidth="47.0" visible="false" GridPane.columnIndex="11">
+               <font>
+                  <Font name="Comic Sans MS" size="24.0" />
+               </font>
+            </TextField>
+         </children>
+      </GridPane>
+      <Button fx:id="goBackButton" layoutX="110.0" layoutY="938.0" mnemonicParsing="false" onAction="#getBack" prefHeight="47.0" prefWidth="103.0" />
+      <ImageView accessibleRole="BUTTON" disable="true" fitHeight="39.0" fitWidth="94.0" focusTraversable="true" layoutX="124.0" layoutY="942.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../pointer.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="textPrompt" layoutX="653.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="750.1366577148438">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="resultWords" layoutX="897.0" layoutY="582.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="Comic Sans MS" size="24.0" />
+         </font>
+      </Text>
+      <ProgressBar fx:id="progressBar" layoutX="652.0" layoutY="398.0" prefHeight="54.0" prefWidth="282.0" progress="0.0" stylesheets="@lightTheme.css" />
+   </children>
+</AnchorPane>

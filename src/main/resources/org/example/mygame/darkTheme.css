@@ -1,0 +1,53 @@
+#playButton,
+#exitButton,
+#rulesButton,
+#allTopicButton,
+#casualTopicButton,
+#faunaTopicButton,
+#geographyTopicButton,
+#historyTopicButton,
+#scienceTopicButton,
+#literatureTopicButton,
+#goBackButton {
+    -fx-background-color: linear-gradient(#4d4d4d,#4d4d4d); /* Темные кнопки */
+    -fx-text-fill: white;
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-size: 36px;
+    -fx-border-color: white;
+    -fx-border-width: 0;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+}
+
+#playButton:hover,
+#exitButton:hover,
+#rulesButton:hover,
+#allTopicButton:hover,
+#casualTopicButton:hover,
+#faunaTopicButton:hover,
+#geographyTopicButton:hover,
+#historyTopicButton:hover,
+#scienceTopicButton:hover,
+#literatureTopicButton:hover,
+#goBackButton:hover {
+    -fx-background-color: #666666; /* Немного светлее при наведении */
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( one-pass-box , white , 8 , 0.0 , 2 , 0 );
+}
+
+#mainPane, #gamePane, #hangmanPane {
+    -fx-background-color: linear-gradient(#222222,#222222); /* Темный фон */
+}
+
+.btnA, .btnB, .btnC, .btnD, .btnE, .btnF, .btnG, .btnH, .btnI, .btnJ, .btnK, .btnL,
+.btnM, .btnN, .btnO, .btnP, .btnQ, .btnR, .btnS, .btnT, .btnU, .btnV, .btnW, .btnX,
+.btnY,. btnZ {
+    -fx-background-color: linear-gradient(#555555,#555555); /* Темные кнопки алфавита */
+    -fx-text-fill: white;
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-size: 24px;
+    -fx-border-color: white;
+    -fx-border-width: 0;
+    -fx-border-radius: 60;
+    -fx-background-radius: 60;
+}
